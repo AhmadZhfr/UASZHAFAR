@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tugas Final</title>
+	<style>
+	    *,html, body {
+        	margin: 0;
+        	padding: 0;
+        	font-family: Arial;
+        	box-sizing: border-box;
+	        flex-shrink: 0;		
+        }
+        header, footer {
+        	background-color: #0F3325;
+        	color: white;
+        	text-align: center;
+        	padding: 40px;
+        }
+        nav {
+        	background-color: black;
+        	display: flex;
+        	padding: 10px;
+        	justify-content: center;
+        }
+        nav ul {
+        	display: flex;
+        	align-items: right;
+        	list-style: none;
+        	gap: 1rem;
+        }
+        nav ul li a {
+        	text-decoration: none;
+        	color: white;
+        	
+        }
+        nav ul li a:hover {
+        	background-color: 	#483D8B;
+        	padding: 10px;
+        }
+        .box {
+            display: grid;
+        	align-items: center;
+        	justify-content: center;
+        	width: 100%;
+        	height: 150vh;
+        	background-color: Azure;
+        }
+        .uhuy1 {
+        	width: 800px;
+        	height: 600px;
+        	background: 	#fffdd0;
+        	padding: 20px;
+        	border-radius: 20px;
+        	box-shadow: 0 0 3px black;
+        }
+        .uhuy2 {
+        	width: 800px;
+        	height: 200px;
+        	background: #fffdd0;
+        	padding: 20px;
+        	border-radius: 20px;
+        	box-shadow: 0 0 3px black;
+        }
+        .uhuy1 h2 {
+            color: black;
+        }
+        .uhuy1 pre {
+            color: black;
+            font-size: 18px;
+        }
+        .uhuy2 pre {
+            color: black;
+            font-size: 18px;
+        }
+        footer{
+            font-size: 30px;
+		}
+
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Judul Web : Ahmad Zhafar</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+            <li><a href="kelasmethodobjek.html">Kelas Method Objek</a></li>
+            <li><a href="Encapsulation.html">Encapsulation</a></li>
+            <li><a href="inheritance.html">Inheritance</a></li>
+            <li><a href="polymorphism.html">Polymorphism</a></li>
+            <li><a href="magicmethod.html">Magic Method</a></li>
+            <li><a href="abstraksi.html">Abstraksi</a></li>
+            <li><a href="overriding.html">Overriding</a></li>
+            <li><a href="overloading.html">Overloading</a></li>
+		</ul>
+	</nav>
+
+	<div class="box">
+		<div class="uhuy1">
+			<h2>Kode : <br> </h2>
+            <pre>
+			<br>
+		class Buku {
+			public $judul;
+			public $penulis;
+
+			public function __construct($judul, $penulis) {
+				$this->judul = $judul;
+				$this->penulis = $penulis;
+			}
+
+			public function deskripsi() {
+				return "Buku '{$this->judul}' ditulis oleh {$this->penulis}.";
+			}
+		}
+
+		$buku1 = new Buku("Python untuk Pemula", "John Doe");
+		$buku2 = new Buku("Mastering Machine Learning", "Jane Smith");
+
+		echo $buku1->deskripsi();
+		echo $buku2->deskripsi();
+
+
+            </pre>
+		</div>
+		<div class="uhuy2">
+			<h2>Hasil :</h2>
+            <pre>
+				<br>
+Buku 'Python untuk Pemula' ditulis oleh John Doe.
+Buku 'Mastering Machine Learning' ditulis oleh Jane Smith.
+
+            </pre>
+		</div>
+	</div>
+	</div>
+	<footer>
+		<p>&copy; 236250067</p>
+	</footer>
+
+</body>
+</html>
+
+
